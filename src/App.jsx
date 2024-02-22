@@ -17,11 +17,13 @@ import Signin from './component/auth/Signin';
 import Errorpage from './component/error/Errorpage';
 
 
+
+
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/" element={<Layout />}>
           <Route path="/home" element={<Home />} />
